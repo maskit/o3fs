@@ -27,3 +27,8 @@ Limitations
 O3FS will limit some features that originally provided by online storage for
 unified storage access. But if you really need the feature, you can also use
 the storage directly.
+
+FAQ
+---
+**Q:** How do you pronounce O3FS?  
+**A:** It's Ozone-Filesystem, But you can call simply Oh-Three-Filesystem.

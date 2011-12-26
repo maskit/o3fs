@@ -2,7 +2,7 @@ O3FS: One and Only Online File System
 ===
 
 O3FS is a kind of filesystem. It doesn't manage any files, only provides
-one and only root directory and its sub-directories for mounting various of
+one and only root directory and its sub-directories for mounting various
 online storage such as Dropbox.
 
 Why O3FS

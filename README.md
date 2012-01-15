@@ -21,6 +21,16 @@ O3FS provides a one-rooted, application accessible big tree. It allows us to
 move/copy files from one to another and applications would be able to use any
 online storage as long as it supports O3FS.
 
+Our goal
+---
+
+Provide a online filesystem which can mount any online storage on its tree.
+
+How to use O3FS
+---
+
+O3FS provies Web API.
+
 Limitations
 ---
 
@@ -32,3 +42,6 @@ FAQ
 ---
 **Q:** How do you pronounce O3FS?  
 **A:** It's Ozone-Filesystem, But you can call simply Oh-Three-Filesystem.
+
+**Q:** Is this opensource implementation of a online storage?  
+**A:** No. We don't provide any storage. It is just a filesystem.

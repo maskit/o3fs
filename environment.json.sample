@@ -1,0 +1,5 @@
+{
+    "DOTCLOUD_WWW_HTTP_URL": "http://localhost:12345/", 
+    "O3FS_PORT": "12345", 
+    "O3FS_SESSION_SECRET": "secret"
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{{title}}</title>
+</head>
+<body>
+{{#login}}
+You're logged in as {{login}} <a href="{{url_logout}}">Logout</a>
+{{/login}}
+{{^login}}
+<a href="{{url_login}}">Login</a>
+{{/login}}
+</body>
+</html>

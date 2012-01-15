@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{{title}}</title>
+</head>
+<body>
+
+<article>
+<form method="POST" action="{{url_login}}">
+<p>Login using OpenID</p>
+<input name="openid_identifier" />
+<input type="hidden" name="_csrf" value="{{csrf_token}}" />
+<input type="submit" value="Login" />
+
+</form>
+</article>
+
+</body>
+</html>

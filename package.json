@@ -4,7 +4,7 @@
 	"main": "./lib/o3fs.js",
 	"dependencies": {
 		"express": "~2.5.4",
-		"openid": "~0.3.2"
+		"openid": "~0.3.2",
 		"hogan.js": "~1.0.2"
 	}
 }

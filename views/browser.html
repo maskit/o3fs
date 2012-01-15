@@ -6,10 +6,10 @@
 </head>
 <body>
 {{#login}}
-You're logged in as {{login}} <a href="{{url_logout}}">Logout</a>
+Hello {{login}} <a href="{{url.logout}}">Logout</a>
 {{/login}}
 {{^login}}
-<a href="{{url_login}}">Login</a>
+<a href="{{url.login}}">Login</a>
 {{/login}}
 </body>
 </html>

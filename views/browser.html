@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <title>{{title}}</title>
-<script src="http://yui.yahooapis.com/{{config.yui_version}}/build/yui/yui-min.js"></script>
+<script	src="http://yui.yahooapis.com/{{config.yui_version}}/build/yui/yui-min.js"></script>
 <script src="/browser/js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssbase/cssbase-min.css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssgrids/grids-min.css">
+<link rel="stylesheet" type="text/css" href="/browser/css/common.css" />
 </head>
-<body>
-{{#login}}
-Hello {{login}} <a href="{{url.logout}}">Logout</a>
-{{/login}}
-{{^login}}
-<a href="{{url.login}}">Login</a>
-{{/login}}
+<body class="yui3-skin-sam">
+	<header class="yui3-g">
+		<div class="logo yui3-u"><a href="/"><img src="/browser/img/logo.svg" alt="O3FS Browser"></a></div>
+		<div class="login yui3-u">
+			{{#login}}
+			Hello <span class="id">{{login}}</span> <span>[ <a href="{{url.logout}}">Logout</a> ]</span>
+			{{/login}}
+			{{^login}}
+			<div><a href="{{url.login}}">Login</a></div>
+			{{/login}}
+		</div>
+	</header>
+	<section id="browser-app">
+		<header>
+			<div id="browser-menu" class="yui3-menu yui3-menu-horizontal yui3-menubuttonnav">
+				<div class="yui3-menu-content">
+					<ul>
+						<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="#file">File</a></li>
+						<li>
+						<a class="yui3-menu-label" href="#storage"><em>Storage</em></a>
+						<div id="browser-menu-storage-submenu" class="yui3-menu">
+								<div class="yui3-menu-content">
+									<ul>
+										<li id="browser-menu-storage-mount" class="yui3-menuitem"><a
+											class="yui3-menuitem-content" href="#storage-mount">Mount</a></li>
+										<li id="browser-menu-storage-unmount" class="yui3-menuitem"><a
+											class="yui3-menuitem-content" href="#storage-unmount">Unmount</a></li>
+										<li id="browser-menu-storage-list" class="yui3-menuitem"><a
+											class="yui3-menuitem-content" href="#storage-list">List</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="#account">Account</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</section>
 </body>
 </html>

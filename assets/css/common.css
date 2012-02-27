@@ -1,0 +1,10 @@
+body header {
+	margin: 5px;
+}
+body header .logo {
+	margin-right: 15px;
+}
+
+.login .id {
+	font-weight: bold;
+}

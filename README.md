@@ -8,9 +8,9 @@ online storage such as Dropbox.
 Why O3FS
 ---
 
-On the UNIX system, all storage which we need to access is must be mounted to
-the one big tree, rooted at '/'. So we can access the storage using absolute
-path that starts with '/' (or somtimes using relative path).
+On the UNIX system, all storage which we access is must be mounted to the one
+big tree, rooted at '/'. So we can access the storage using absolute path that
+starts with '/' (or somtimes using relative path).
 
 On the other hand, online storage is completely independent each other. It
 means, there are multiple small trees and we have to plant a big tree in our
